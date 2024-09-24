@@ -1,6 +1,6 @@
-function tiff_stack = read3Dstack (fileName, Dir); % Determine the number of image frames and the offset to the first image 
+function tiff_stack = read3Dstack (fileName, Dir) % Determine the number of image frames and the offset to the first image 
 % reads a multipage tiff images from fileName in directory Dir (if given)
-if exist('Dir')
+if exist('Dir', 'dir')
     cd(Dir)
 end
 
